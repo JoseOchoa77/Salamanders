@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--		Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	quiz1.html
+		Purpose:Provides an HTML form that to be processed by quiz1.php
+		Input: 	userAnswer
+		Output: submits userAnswer to quiz1.php
+-->
+
+<html>
+<head>
+	<title>PHP QUIZ</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+	<h1>QUIZ</h1>
+	<form action = "quiz1.php" method = "post" >
+		<label>What is the name for expressions that evaluate to true or false?
+            <select name = "userAnswer">
+            <option>Arithmetic</option>
+            <option>Boolean</option>
+            <option>Algorithms</option>
+            <option>Passwords</option>
+            </select></label>
+            
+		<input class = "submit" type = "submit" value = "Submit your answer">
+	</form>
+</body>
+</html>

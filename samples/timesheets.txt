@@ -1,0 +1,3 @@
+Mike:Smith:20:12.55
+Mary:King:40:17.50
+Chris:Jones:35:9.50

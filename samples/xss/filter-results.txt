@@ -1,0 +1,23 @@
+<h2>Test</h2>:FILTER_SANITIZE_STRING:<script>alert("You have been hacked!!")</script> 
+Test:FILTER_SANITIZE_STRING:alert(&#34;You have been hacked!!&#34;) ** replaced double quotes
+
+O'Kane "Test" &lt; 4<30:FILTER_SANITIZE_STRING:<script>alert("You have been hacked!!")</script> 
+O&#39;Kane &#34;Test&#34; &lt; 4:FILTER_SANITIZE_STRING:alert(&#34;You have been hacked!!&#34;) 
+
+O'Kane "Test" &lt; 4<30:FILTER_SANITIZE_SPECIAL_CHARS:<script>alert("You have been hacked!!")</script> 
+O&#39;Kane &#34;Test&#34; &#38;lt; 4&#60;30:FILTER_SANITIZE_SPECIAL_CHARS:&#60;script&#62;alert(&#34;You have been hacked!!&#34;)&#60;/script&#62; 
+
+<h2>test</h2>:FILTER_SANITIZE_SPECIAL_CHARS:<script>alert("You have been hacked!!")</script> 
+&#60;h2&#62;test&#60;/h2&#62;:FILTER_SANITIZE_SPECIAL_CHARS:&#60;script&#62;alert(&#34;You have been hacked!!&#34;)&#60;/script&#62; 
+<h2>test</h2>:FILTER_SANITIZE_STRING:<script>alert('You have been hacked!!')</script> 
+test:FILTER_SANITIZE_STRING:alert(&#39;You have been hacked!!&#39;) 
+
+<h2>test</h2>:FILTER_SANITIZE_SPECIAL_CHARS:<script>alert('You have been hacked!!')</script> 
+&#60;h2&#62;test&#60;/h2&#62;:FILTER_SANITIZE_SPECIAL_CHARS:&#60;script&#62;alert(&#39;You have been hacked!!&#39;)&#60;/script&#62; 
+
+<h2>test</h2>:FILTER_SANITIZE_STRING:<script>alert('You have been hacked!!')</script> 
+test:FILTER_SANITIZE_STRING:alert('You have been hacked!!') 
+
+<h2>test</h2>:FILTER_SANITIZE_SPECIAL_CHARS:<script>alert('You have been hacked!!')</script> 
+&#60;h2&#62;test&#60;/h2&#62;:FILTER_SANITIZE_SPECIAL_CHARS:&#60;script&#62;alert(&#39;You have been hacked!!&#39;)&#60;/script&#62; 
+

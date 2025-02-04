@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--		Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	process-scores4.html
+		Purpose:Prompts the user for a file name
+		Input: fileName
+		Output: Submits the file name to process-scores4.php
+-->
+
+<html>
+<head>
+	<title>STUDENT SCORES</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1> STUDENT SCORES </h1>
+
+	<form action ="process-scores4.php" method = "post" >
+
+		<label>Choose a scores file:
+            <select name = "fileName">
+            <option>scores1.txt</option>
+            <option>scores2.txt</option>
+            <option>scores3.txt</option>
+            <option>scores4.txt</option>
+            </select></label>
+
+		<input class ="submit" type ="submit" value ="Display the scores">
+	</form>
+</body>
+</html>
+

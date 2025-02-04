@@ -1,0 +1,22 @@
+<!--	
+	Author:
+	Date:
+	File:	modify5.txt
+	Purpose:Chapter 3 Exercise
+-->
+
+The instructions below are listed alphabetically! 
+Based on what you have read in Chapter 3, can you reorder and indent the 
+instructions so that they are in the correct order, and can be easily 
+followed to ensure that the air pressure of a car tire is correct? 
+
+Add some air
+ENDIF
+ENDIF
+IF air pressure < correct pressure
+IF air pressure > correct pressure
+Release some air
+REPEAT
+Test the air pressure
+UNTIL air pressure = correct pressure
+

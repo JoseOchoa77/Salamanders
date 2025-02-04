@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--Author:
+	Date:
+	File:	modify3.html
+	Purpose:Chapter 5 Exercise
+
+	REQUIREMENT: Write a Web-based application consisting of a Web form
+	(modify3.html) and a PHP program (modify3.php).
+
+	modify3.html should include a form that prompts the user for the number
+	of adult movie tickets they wish to purchase AND the number of children's
+	tickets that they wish to purchase, then submits these to modify3.php
+	for processing. modify3.html currently contains code that only prompts for
+	the number of adult movie tickets.
+
+	modify3.php should: receive the two values from the $_POST array;
+	calculate the total cost (each adult ticket sells
+	for 6.50, each child ticket sells for 4.50); display the number of
+	adult tickets purchased, the number of children's tickets purchased,
+	and the total cost. modify3.php currently contains code that processes
+	only adult tickets.
+
+-->
+
+<html>
+<head>
+	<title>Modify3</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Modify3</h1>
+
+	<form action = "modify3.php" method = "post" >
+
+		<label>How many adult tickets do you need?
+			<input type = "text" size = "10" name = "adultTickets"></label>
+		<input class = "submit" type = "submit" value = "Calculate the cost">
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!--	
+	Author:
+	Date:
+	File:	game-intro.txt
+	Purpose:Chapter 3 Exercise
+-->
+
+game-intro.html algorithm:
+
+END
+
+game-intro.php algorithm:
+
+END

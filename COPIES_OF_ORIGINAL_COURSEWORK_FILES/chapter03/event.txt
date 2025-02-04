@@ -1,0 +1,14 @@
+<!--	
+	Author:
+	Date:
+	File:	event.txt
+	Purpose:Chapter 3 Exercise 
+-->
+	
+event.html algorithm:
+	
+END
+
+event.php algorithm:
+
+END

@@ -1,0 +1,22 @@
+body 	{ background: yellow  }
+
+h1   	{ font-family: Arial, Helvetica, Sans-serif; font-size:18pt;
+	  color:red; font-weight:bold; }
+       
+p	{ font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
+	  color:black; }
+
+input	{ font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
+	  color:black; }
+
+span	{ font-family: Arial, Helvetica, Sans-serif; font-size:14pt; }  
+
+#red		{ color:red }
+#yellow		{ color:yellow }
+#orange		{ color:range }
+#cyan		{ color:cyan }
+#green		{ color:green }
+#pink		{ color:pink }
+#blue		{ color:blue }
+#black		{ color:black }
+#magenta	{ color:magenta }

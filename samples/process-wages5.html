@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--		Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	process-wages5.html
+		Purpose:Process a file of timesheets and calculates and display 
+		the average hours worked by employeew who earn less than $12.00
+-->
+
+<html>
+<head>
+	<title>WEEKLY WAGE REPORT</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1> WEEKLY WAGE REPORT </h1>
+
+	<form action ="process-wages5.php" method = "post" >
+
+		<label>Choose a file:
+            <select name = "fileName">
+            <option>timesheets1.txt</option>
+            <option>timesheets2.txt</option>
+            <option>timesheets3.txt</option>
+            </select></label>
+
+		<input class ="submit" type ="submit" value ="Display the average hours">
+	</form>
+</body>
+</html>
+

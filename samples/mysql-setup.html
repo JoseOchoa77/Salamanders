@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	January, 2013
+		File:	mysql-setup.html
+		Purpose:HTML Practice
+-->
+
+<html>
+<head>
+	<title>MySQL Setup</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>MySQL Setup: A Web-Based Introduction to Programming</h1>
+	<p>This application will set up your MySql server for use with the textbook. 
+	You must follow this step before you can use the server with the Chapter 14 samples and exercises.</p>
+	<form action = "setup-mysql.php" method = "post" >
+
+		<label>Use the drop-down list to select whether you are using the xampp or the MAMP Web Server:
+		<select name = "server">
+		<option value = "xampp">xampp</option>
+		<option value = "mamp">MAMP</option>
+		</select>
+		</label>
+		
+		<label><strong>Advanced Users Only (Windows or Macintosh or Linux)</strong>.If you have already set your own root password for MySql, please type the password here, otherwise leave this field empty. Root Password: <input type = "password" size = "12" name = "rootPW"></label>
+
+		<input class = "submit" type = "submit" value = "Submit">
+	</form>
+
+</body>
+</html>

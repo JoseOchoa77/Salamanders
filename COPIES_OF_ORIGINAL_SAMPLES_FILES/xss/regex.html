@@ -1,0 +1,28 @@
+<!--	Author:
+		Date:
+		File:	regex.html
+-->
+<html>
+<head>
+	<title>Regex Demo</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css" />
+</head>
+
+<body style = "width:300; border-style:groove; padding:20px; border-color:red">
+	<h1>Regex Demo</h1>
+	<p>This application shows how regular expression can be used to 
+	validate certain kinds of input. See Appendix E for an explanation.</p>
+	
+	<h2>Submit a product code</h2>
+	<p>Product codes must consist of 3 upp-case letters, followed 6 digits,
+	followed by 0 or 1 lower-case letter.</p>
+	
+	<form action = "regex.php" method = "post">
+	<label>Product Code
+		<input type = "text" size = "12" name = "code" /></label>
+	<input class = "submit" type = "submit" value = "Submit" />
+	</form>
+
+    </body>
+</html>
+

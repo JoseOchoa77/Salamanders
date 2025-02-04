@@ -1,0 +1,21 @@
+*************************************************
+* NOTE:                                           *
+* Open film-ratings-add.php                     *
+* Insert the following <php> code between       *
+  <h1>Film Ratings - Add a New Rating</h1> and  *
+  <p>Thank you, your rating has been added.</p> *
+* Save film-ratings-add.php                     *
+*************************************************
+
+    <?php  
+		
+    $filmTitle = $_POST['title'];
+    $numStars = strLen($_POST['rating']);
+
+    $filmReviewsFile =fopen("film-ratings-list.txt","a");	// open the file
+    
+    fputs($filmReviewsFile, $filmTitle.",".$numStars."\n");	// append the film title and number of stars, separate by a comma
+
+	fclose($filmReviewsFile);								// close the file
+
+	?>

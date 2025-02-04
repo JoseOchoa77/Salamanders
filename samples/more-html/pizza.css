@@ -1,0 +1,55 @@
+body{   background: white;border:1px solid black; width:400px;
+        font-family: Arial, Helvetica, Sans-serif;
+}
+
+h1 {font-size:18pt; padding-left:20px;padding-top:25px;color:white}
+h2 {padding-left: 20px;}
+
+form    {
+            display: inline-block;
+            margin-left:10px;
+            margin-top:10px;
+            padding:2px;
+            background: white;
+        }
+
+label   {
+            font-size:12pt; color:black;
+            clear: left; 
+            float: left;
+            width: 350px;
+            padding: 5px;
+        }
+label.delivery {
+            margin-bottom:5px;
+        }
+
+hr   {
+            color: green;
+            clear: left; 
+            float: left;
+            width: 350px;
+        }
+
+input,textarea   {
+            float: right;
+            width: auto;
+            vertical-align:middle;
+        }	
+        
+input.submit
+        {
+            background:lightgray;
+            clear: left; 
+            float: right;
+            width: 350px;
+            height: 40px;
+            font-size:14pt;
+            font-weight:bold;
+            color:green;
+            
+            margin-top:10px;
+            
+        }
+    
+

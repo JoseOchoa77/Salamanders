@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	smoking.html
+		Purpose:HTML Practice
+-->
+
+
+<html>
+
+<head>
+	<title>Smoking Calculator</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Welcome to the Smoking Calculator!</h1>
+
+	<form action = "smoking.php" method = "post" >
+
+        <label>First name?
+            <input type = "text" size = "15" name = "firstName"></label>
+		<label>Last name?
+            <input type = "text" size = "15" name = "lastName"></label>
+		<label>How long have you smoked (years)?
+            <input type = "text" size = "5" name = "yearsSmoked"></label>
+		<label>How many cigarettes have you smoked on average every day (roughly)?
+		<select name = "smokedDaily">
+			<option>0</option>
+			<option>1</option>
+			<option>2</option>
+			<option>5</option>
+			<option>10</option>
+			<option>20</option>
+			<option>30</option>
+			<option>40</option>
+		</select>
+		</label>
+		
+		<input class = "submit" type = "submit" value = "Tell me the bad news">
+		
+	</form>
+</body>
+</html>

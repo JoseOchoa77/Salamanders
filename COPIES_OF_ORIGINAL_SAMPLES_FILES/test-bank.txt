@@ -1,0 +1,3 @@
+Which is a valid PHP variable name? :thisOne:$thisOne:$3rdOne:$thisOne
+Which symbol ends each statement in PHP? :;:END:$:;
+What is the answer to 3 * (3 + 6) - 2? :13:27:25:25

@@ -1,0 +1,12 @@
+body 	{ background: #fff; }
+
+h1   	{ font-family: Arial, Helvetica, Sans-serif; font-size:22pt;
+	  color:#465699; font-weight:bold; }
+
+h2   	{ font-family: Arial, Helvetica, Sans-serif; font-size:17pt;
+	  color:#601a1a; font-weight:bold; }
+       
+p	{ font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
+	  color:#465699; font-weight:bold; }
+strong {font-family:Arial, Helvetica, Sans-serif; font-size: 14pt;
+    color: #e03636; }

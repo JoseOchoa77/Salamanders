@@ -1,0 +1,40 @@
+<!--	Author:
+		Date:
+		File:	city-weather.html
+-->
+<html>
+<head>
+	<title>XSS Demo</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css" />
+</head>
+
+<body style = "width:300; border-style:groove; padding:20px; border-color:red">
+	<h1>XSS Demo</h1>
+	<p>This application allows you to submit or view weather reports
+	from different cities. But it is insecure and vulnerable to 
+	malicious XSS (Cross Site Scripting) attacks. Use the application a few 
+	times, then copy and paste the following into the City text box, choose
+	a weather and Submit. See Appendix E for an explanation.</p>
+	
+	<code>&lt;script&gt;alert("You have been hacked!!")&lt;/script&gt;</code>
+	
+	<h2><a href = "weather-report.php">View the Weather Reports</a></h2>
+	
+	<h2>Submit a new report</h2>
+	
+	<form action = "city-weather.php" method = "post">
+	<label>City
+		<input type = "text" size = "12" name = "city" /></label>
+	<label>Today's Weather
+    <select name = "weather">
+	<option>Sunny</option>
+	<option>Overcast</option>
+	<option>Rain</option>
+	<option>Snow</option>
+	</select></label>
+	<input class = "submit" type = "submit" value = "Submit" />
+	</form>
+
+    </body>
+</html>
+
