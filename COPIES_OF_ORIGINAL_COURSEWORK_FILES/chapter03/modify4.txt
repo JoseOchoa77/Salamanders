@@ -1,0 +1,33 @@
+<!--		
+	Author:
+	Date:
+	File:	modify4.txt
+	Purpose:Chapter 3 Exercise
+-->
+
+The algorithms below were written to meet the requirement in fixit4.txt
+but an addition has now been made to the requirement (see below). Modify 
+the algorithms as needed so that they meet the revised requirement:
+
+REQUIREMENT: Write a Web-based application consisting of a Web form
+(calc-tax.html) and a PHP program (calc-tax.php). The application should:
+ask the user for a purchase amount; calculate a reduced purchase amount 
+based on a 25% discount (this is 0.75 times the purchase amount); 
+calculate the tax on the reduced amount (7% or 0.07 of the cost); 
+calculate the total cost; display the reduced purchase amount, tax, and 
+total cost.
+
+calc-tax.html algorithm:
+
+	Prompt for purchaseAmount
+	Get purchaseAmount
+	Submit purchaseAmount to calc-tax.php
+END
+
+calc-tax.php algorithm:
+
+	Receive purchaseAmount from calc-tax.html
+	tax = purchaseAmount * 0.07
+	total = purchaseAmount + tax
+	Display purchaseAmount, tax, total
+END

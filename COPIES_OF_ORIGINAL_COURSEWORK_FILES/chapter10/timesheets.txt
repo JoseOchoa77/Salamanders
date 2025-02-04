@@ -1,0 +1,10 @@
+Mike:Smith:40:12.55
+Mary:King:0:17.50
+Chris:Jones:35:9.50
+John:Anderson:50:10.55
+Anne:Frame:10:10.55
+Catherine:Olson:35:10.55
+Steve:Jones:35:17.50
+Joseph:Canton:0:8.50
+Beth:Jones:42:25.25
+Peter:Anderson:16:17.50

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	temp-converter4.html
+		Purpose:Provide a form to receive a starting temperature, ending temperature
+		and increment value from the user.
+		Input: none
+		Ouput: startTemp, endTemp, increment - submitted for processing by temp-converter4.php
+-->
+<html>
+<head>
+	<title>Temperature Conversions</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>Temperature Conversions</h1>
+	<form action = "temp-converter4.php" method = "post" >
+		<label>Starting temp (C):
+            <input type = "text" size = "5" name = "startTemp"></label>
+
+		<label>Ending temp (C): 
+            <input type = "text" size = "5" name = "endTemp"></label>
+
+		<label>Increment value: 
+            <input type = "text" size = "5" name = "increment"></label>
+		
+		<input class = "submit" type = "submit" value = "Display Conversion Table">
+		
+	</form>
+
+</body>
+</html>
+
+
+

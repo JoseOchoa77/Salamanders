@@ -1,0 +1,36 @@
+<!--	Author:
+		Date:
+		File:	test-filter-var.html
+-->
+<html>
+<head>
+	<title>Sanitize Test</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css" />
+</head>
+
+<body style = "width:400; border-style:groove; padding:20px; border-color:red">
+	<h1>Test filter_var()</h1>
+	<p>This application tests the use of filter_var with
+	different settings. See Appendix E for an explanation.</p>
+	
+	<code>&lt;script&gt;alert("You have been hacked!!")&lt;/script&gt;</code>
+	
+	<h2>Submit test data</h2>
+	
+	<form action = "test-filter-var.php" method = "post">
+	<label>City
+		<input type = "text" size = "12" name = "city" /></label>
+	<label>Which Filter
+    <select name = "filter">
+	<option>FILTER_SANITIZE_STRING</option>
+	<option>FILTER_SANITIZE_SPECIAL_CHARS</option>
+	</select></label>
+	<label>Other
+		<input type = "text" size = "12" name = "other" /></label>
+	
+	<input class = "submit" type = "submit" value = "Submit" />
+	</form>
+
+    </body>
+</html>
+

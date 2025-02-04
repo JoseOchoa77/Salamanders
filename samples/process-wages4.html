@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--		Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	process-wages4.html
+		Purpose:Process a file of timesheets and calculates and displays the average hours worked
+-->
+
+<html>
+<head>
+	<title>WEEKLY WAGE REPORT</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1> WEEKLY WAGE REPORT </h1>
+
+	<form action ="process-wages4.php" method = "post" >
+
+		<label>Choose a file
+            <select name = "fileName">
+            <option>timesheets1.txt</option>
+            <option>timesheets2.txt</option>
+            <option>timesheets3.txt</option>
+            </select></label>
+
+		<input class ="submit" type ="submit" value ="Display the average hours">
+	</form>
+</body>
+</html>
+

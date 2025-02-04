@@ -1,0 +1,32 @@
+<!--	
+	Author:
+	Date:
+	File:	modify3.txt
+	Purpose:Chapter 3 Exercise
+-->
+
+The algorithms below were written to meet the requirement in fixit3.txt
+but an addition has now been made to the requirement (see below). Modify 
+the algorithms as needed so that they meet the revised requirement:
+
+REQUIREMENT: Write a Web-based application consisting of a Web form
+(ticket-purchase.html) and a PHP program (ticket-purchase.php). The application 
+should: ask the user for the number of adult movie tickets they wish to purchase
+AND the number of children's tickets that they wish to purchase;
+calculate the total cost (each adult ticket sells for 6.50, each child ticket 
+sells for 4.50); display the number of adult tickets purchased, the number of 
+children's tickets purchased, and the total cost:
+
+ticket-purchase.html algorithm:
+
+	Prompt for numTickets
+	Get numTickets
+	Submit numTickets to ticket-purchase.php
+END
+
+ticket-purchase.php algorithm:
+
+	Receive numTickets from ticket-purchase.html
+	totalCost = numTickets * 6.50
+	Display numTickets, totalCost
+END

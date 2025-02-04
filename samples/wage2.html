@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	wage2.html
+		Purpose:Uses an HTML form that provides a button to run a PHP script
+		Input: 	hourlyWage, hoursWorked
+		Output: submits hourlyWage, hoursWorked to wage2.php
+-->
+
+
+<html>
+<head>
+	<title>Wage Report</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+	<h1>Wage Report</h1>
+	<form action = "wage2.php" method = "post" >
+
+		<label>Hourly wage:
+			<input type = "text" size = "10" name = "hourlyWage"></label>
+		<label>Hours worked:
+			<input type = "text" size = "10" name = "hoursWorked"></label>
+
+		<input class = "submit" type = "submit" value = "Get Your Wage Report Now">
+		
+		
+    </form>		
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	rainfall6.html
+		Purpose:Form to submit a request to process a specific file of rainfall data
+		Input: 	none
+		Output: rainFile is submitted for processing by rainfall5.php
+-->
+
+<html>
+<head>
+	<title>RAINFALL</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>RAINFALL REPORTS</h1>
+
+	<form action = "rainfall6.php" method = "post" >
+
+		<label>Choose a year:
+            <select name = "rainFile" >
+            <option>rainfall2003.txt</option>
+            <option>rainfall2004.txt</option>
+            <option>rainfall2005.txt</option>
+            <option>rainfall2006.txt</option>
+            <option>rainfall2007.txt</option>
+            </select></label>
+
+		<input class = "submit" type = "submit" value = "SUBMIT">
+	</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--	Author:
+		Date:
+		File:	trip-log.html
+		Purpose: Chapter 6 Exercise
+-->
+
+<html>
+<head>
+	<title>Trip Log</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>Trip Log</h1>
+	<p>This program will help you calculate fuel costs for a trip.</p>
+	
+	<form action = "trip-log.php" method = "post">
+	<label>Trip Date:
+        <input type = "text" size = "10" name = "tripDate"></label>
+	<label>Miles of Travel:
+        <input type = "text" size = "10" name = "miles"></label>
+	<label>Include breakfast expense?
+        <select name = "breakfast">
+        <option>YES</option>
+        <option>NO</option>
+        </select></label>
+	<label>Include lunch expense?
+        <select name = "lunch">
+        <option>YES</option>
+        <option>NO</option>
+        </select></label>
+    <label>Include dinner expense?
+        <select name = "dinner">
+        <option>YES</option>
+        <option>NO</option>
+        </select></label>
+	<label>Include a hotel stay expense?
+        <select name = "hotel">
+        <option>YES</option>
+        <option>NO</option>
+        </select></label>
+	
+	<input class="submit" type = "submit" value = "Add This Trip to the Log">
+    
+    </form>
+
+</body>
+</html>

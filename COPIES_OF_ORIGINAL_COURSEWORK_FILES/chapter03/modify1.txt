@@ -1,0 +1,33 @@
+<!--	
+	Author:
+	Date:
+	File:	modify1.txt
+	Purpose:Chapter 3 Exercise
+-->
+
+The algorithms below were written to meet the requirement in fixit1.txt
+but an addition has now been made to the requirement (see below). Modify 
+the algorithms as needed so that they meet the revised requirement:
+
+REQUIREMENT: Write a Web-based application consisting of a Web form
+(calc-retirement.html) and a PHP program (calc-retirement.php). 
+The application should: ask the user for their age; calculate the 
+number of years until they retire (assume they retire at 65); calculate 
+the number of years they have worked so far (assume they have worked 
+since 18 years old); display their age, years to retire, and years 
+they have worked so far.
+
+
+calc-retirement.html algorithm:
+
+	Prompt for age
+	Get age
+	Submit age to calc-retirement.php
+END
+
+calc-retirement.php algorithm:
+
+	Receive age from calc-retirement.html
+	yearsToRetire = 65 - age
+	Display age, yearsToRetire
+END	

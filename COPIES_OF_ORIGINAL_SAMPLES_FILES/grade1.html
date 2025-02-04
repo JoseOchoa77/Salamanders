@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	grade1.html
+		Purpose:Provides an HTML form that to be processed by grade1.php
+		Input: 	exam1, exam2, exam3
+		Output: submits exam1, exam2, exam3 to grade1.php
+-->
+
+<html>
+<head>
+	<title>EXAM GRADE</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+	<h1>EXAM GRADE</h1>
+	<form action = "grade1.php" method = "post" >
+	<label>Enter score for Exam 1:
+		<input type = "text" size = "5" name = "exam1">
+	</label>
+	<label>Enter score for Exam 2:
+		<input type = "text" size = "5" name = "exam2">
+	</label>
+	<label>Enter score for Exam 3:
+		<input type = "text" size = "5" name = "exam3">
+	</label>
+	<input class = "submit" type = "submit" value = "Submit your scores">
+	</form>
+</body>
+</html>
+

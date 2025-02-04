@@ -1,0 +1,14 @@
+<!--	
+	Author:
+	Date:
+	File:	travel.txt
+	Purpose:Chapter 3 Exercise
+-->
+
+travel.html algorithm:
+
+END
+
+travel.php algorithm:
+
+END

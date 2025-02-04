@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	welcome.html
+		Purpose:HTML Practice
+-->
+
+
+<html>
+
+<head>
+	<title>Welcome!</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Welcome!</h1>
+
+	<form action = "welcome.php" method = "post" >
+
+        <label>First name:
+            <input type = "text" size = "15" name = "firstName"></label>
+        <label>Last name:
+            <input type = "text" size = "15" name = "lastName"></label>
+        <label>Tell me something that you are interested in:
+            <input type = "text" size = "15" name = "interest1"></label>
+        <label>Another interest:
+            <input type = "text" size = "15" name = "interest2"></label>
+        <label>Another interest:
+            <input type = "text" size = "15" name = "interest3"></label>
+        <label>Please select your birth month:
+            <select name = "birthMonth" >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select></label>
+        <label>And birth day:
+            <select name = "birthDay" >
+                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+                <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+                <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+                <option>31</option>
+            </select></label>
+
+        <input class = "submit" type = "submit" value = "Submit your details">
+	</form>
+</body>
+</html>

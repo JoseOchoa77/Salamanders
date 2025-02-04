@@ -1,0 +1,7 @@
+ EMPLOYEE WEEKLY WAGE REPORT 
+
+Smith, Mike: $ 251.
+King, Mary: $ 700.
+Jones, Chris: $ 332.5.
+
+TOTAL PAY: $ 1283.5.

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	calc-windchill.html
+		Purpose:Prompts the user for a temperature and wind speed`
+		Input: celsius, windspeed
+		Output: Submits the inputs to calcWindchill.php
+-->
+
+<html>
+<head>
+	<title>WIND CHILL CALCULATOR</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>WIND CHILL CALCULATOR</h1>
+
+	<form action ="calc-windchill.php" method = "post" >
+		<label>Temp in degrees Celsius:
+			<input type = "text" size = "5" name = "celsius"></label>
+
+		<label>Wind speed in miles per hour:
+            <input type = "text" size = "5" name = "windspeed"></label>
+		
+		<input class= "submit" type ="submit" value ="Display the Windchill Temp">
+	</form>
+</body>
+</html>
+

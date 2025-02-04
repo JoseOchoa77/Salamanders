@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--Author:
+	Date:
+	File:	modify3.html
+	Purpose:Chapter 11 Exercise
+
+	modify3.html provides the user with a form to submit the cars sold for each quarter. 
+	modify3.php uses an array to store the sale numbers, but the current version uses its own quarterly sales figures instead of receiving the values from the form. Modify this code to receive the values from the form into the array. You do not to change modify3.html.
+
+-->
+
+<html>
+<head>
+	<title>Modify3</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Modify3</h1>
+
+	<form action = "modify3.php" method = "post" >
+		<label>Cars sold in 1st quarter:
+			<input type = "text" size = "5" name = "qtr1"></label>
+		<label>Cars sold in 2nd quarter:
+			<input type = "text" size = "5" name = "qtr2"></label>
+		<label>Cars sold in 3rd quarter:
+			<input type = "text" size = "5" name = "qtr3"></label>
+		<label>Cars sold in 4th quarter:
+			<input type = "text" size = "5" name = "qtr4"></label>
+		<input class="submit" type = "submit" value = "Calculate Total Sales">
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--	Author:
+		Date:
+		File:	travel.html
+		Purpose: Chapter 7 Exercise
+		
+-->
+
+<html>
+<head>
+	<title>Travel</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>Travel Reservation Form</h1>	
+	<p>
+	<form action = "travel.php" method = "post" >
+
+		<label>Vacation destination
+            <select name = "destination">
+				<option>Rome</option>
+				<option>Tokyo</option>																		
+			</select></label>
+		
+		<label>Number of people: 
+            <input type = "text" size = "5" name = "numTravelers"></label>
+		<label>Number of nights:
+            <input type = "text" size = "5" name = "numNights"></label>
+        
+        <input class="submit" type = "submit" value = "Submit Your Reservation">
+
+	</form>
+</body>
+</html>

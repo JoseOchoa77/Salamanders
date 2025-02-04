@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--Author:
+	Date:
+	File:	modify1.html
+	Purpose:Chapter 8 Exercise
+
+		modify1.html does not need to be changed. Change modify1.php
+		so that it will generate an error message if the age is
+		less than 0 or greater than 65, otherwise the program should
+		calculate and display the years to retirement as listed below.
+		Use this error message:
+		"<p>ERROR: You entered $age - that is out of range</p>"
+-->
+
+<html>
+<head>
+	<title>Modify1</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Modify1</h1>
+
+	<p>
+	<form action = "modify1.php" method = "post" >
+
+		<label>Please enter your age:
+			<input type = "text" size = "5" name = "age"></label>
+		<input class="submit" type = "submit" value = "Calculate years to retirement">
+
+	</form>
+
+</body>
+</html>

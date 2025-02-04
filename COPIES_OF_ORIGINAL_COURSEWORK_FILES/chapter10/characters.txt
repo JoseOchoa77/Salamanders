@@ -1,0 +1,10 @@
+Mozart, Elf, 10, 2, 25
+Leamus, Wizard, 30, 4, 50
+Pete, Human, 30, 0, 75
+Tara, Dwarf, 10, 2, 50
+Petal, Elf, 10, 6, 25
+Drake, Dwarf, 20, 4, 100
+Sert, Human, 10, 2, 0
+Brian, Wizard, 20, 6, 25
+Siren, Elf, 30, 4, 50
+May, Dwarf, 20, 2, 50
