@@ -1,64 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>A Web-Based Introduction to Programming</title>
-	<link rel="styleSheet" href="webtech.css" type="text/css" media="all">
-</head>
-<body>
-	<a name = "top"></a>
-	<h1>A Web-Based Introduction to Programming</h1>
-	<h2>Run your samples and coursework files here!</h2>
-	<p>Use these links to view and test your programs:</p>
-	<ul>
-	<li><a href = "samples/">Run files in the samples folder</a></li>
-	<li><a href = "coursework/">Run files in the coursework folder</a></li>
-	</ul>
-	<p>NOTE: you can also view these files by simply typing the URL directly, for example:</p>
-	<p><cite><a href="http://localhost/webtech/coursework/chapter02/hello.html">http://localhost/webtech/coursework/chapter02/hello.html</a></cite></p>
-	<h2>Need Help?</h2>
-	The <a href = "https://www.mikeokane.com/textbooks/wbip/support.php">Textbook Web Site</a> provides installation instructions, webtech.zip. chapter hints and help, presentation materials, textbook corrections and updates, support materials and tutorials, materials for previous editions, and more. Here are some other useful FAQs and resources:
-	<ul>
-	<li><a href = "backup">How often should I back up my work?</a></li>
-	<li><a href = "#coursework">How do I work on my coursework files?</a></li>
-	<li><a href = "#restore">How do I restore a file that I've messed up?</a></li>
-	<li><a href = "#debug">How can I get help debugging my code?</a></li>
-	<li><a href = "#notes">How can I edit this page for my own purposes?</a></li>
-	<li><a href = "https://php.net/index.php">The Home page for PHP</a></li>
-	<li>Current <a href = "https://www.w3.org/standards/">HTML</a> and <a href="http://www.w3.org/Style/CSS/">CSS</a> standards</li>
-    <li><a href = "https://www.w3schools.com/">W3 Schools</a> Online Tutorials for help with HTML, CSS, PHP, and many other languages.</li>
-    <li><a href = "https://developer.mozilla.org/en-US/docs/Learn">A very useful general resource for Web developers (from Mozilla)</a></li>
-	</ul>
-	<a name="backup"></a>
-	<h2>How often should I backup my work?</h2> 
-	<p>Make a back up of your current work <strong>whenever you stop working</strong>. You could use a temporary folder on another drive, in the cloud, or even an email folder for this. Every week consider making a complete back up of your webtech folder to another disk or cloud storage location. If you ever have a problem with your working disk, you can reinstall your Web server, then copy your backup webtech folder to the htdocs folder of your new installation. As you gain some experience, consider working through the Version Control tutorial on the textbook Web site and start using GitHub to back up your work.</p>
-	<p><a href = "#top">Return</a></p>
-	<a name="coursework"></a>
-	<h2>How do I work on my coursework files?</h2>
-	<p>Chapter 2 explains this in detail but here are the basic steps to make changes to a file:</p>
-	<ol>
-	<li>Start a text editor</li>
-	<li>Open the file you want to work on (or create a new file if that's what you want). These files are located in the appropriate chapter folder under your hdtocs/webtech/coursework folder, or in the webtech/samples folder of your installation.</li>
-	<li>Edit the file as needed</li>
-	<li>Save the file (use <strong>Save</strong> to replace the existing file with your new version, or <strong>Save As</strong> to save the file with a new name, and/or in a new location, if you don't want to lose the previous version of the file). </li>
-	<li>Now you can open the file in your Web browser to view your changes. To do this either return to this page and click the coursework link above to navigate to the link to your file, or simply type the URL directly in your browser window, for example:  http://localhost/webtech/coursework/chapter05/modify1.html</li>
-	</ol>
-	<p><a href = "#top">Return</a></p>
-	<a name="restore"></a>
-	<h2>Need to restore an original coursework or samples file?</h2> 
-	<p>Sometimes you may make a number of changes to a file in the coursework or samples folders and then wish you could just start again! Your installation includes two folders named <strong>COPIES_OF_ORIGINAL_COURSEWORK_FILES</strong> and <strong>COPIES_OF_ORIGINAL_SAMPLES_FILES</strong>. These folders contain duplicates of the original files that came with your installation. Here two different ways to restore a file from these folders:</p>
-	<ol>
-	<li>Use your text editor to open a file from one of these folders. Then use <strong>Save As</strong> to save the file to the active samples or coursework folder that contains the file you wish to replace. </li>
-	<li>Use your <strong>File Manager</strong> to navigate to the folder that contains the original file, then copy this file to the active samples of coursework folder that contains the file you wish to replace. You can then edit the file as needed.</li>
-	</ol>
-	<a name="debug"></a>
-	<p><a href = "#top">Return</a></p>
-	<h2>How can get help debugging my code?</h2>
-	<p>Appendix D in the textbook contains a lot of useful debugging hints.</p>
-	<a name="notes"></a>
-	<p><a href = "#top">Return</a></p>
-	<h2>How can I edit this page?</h2>
-	<p>You can edit this file to suite your own purposes. It is located in your webtech folder and named index.html. You may find it useful to add some notes of your own, or you may want to include more links, for example if you create additional folders (see below).</p>
-	<p>You can also create additional folders if you want to develop your own work. These can be located under the webtech folder or directly under the htdocs folder. Note that files that are located outside the htdocs folder will not be available for viewing on the Web server unless you change the default document directory settings.</p>
-	<p><a href = "#top">Return</a></p>
-</body>
+
+    <head>
+        <title>Chapter Select</title>
+        <link href="css/select-menu.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Choose a file</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="chapter11">Chapter 11</a></li>
+                    <li><a href="chapter12">Chapter 12</a></li>
+                    <li><a href="chapter13">Chapter 13</a></li>
+                    <li><a href="chapter15">Chapter 15</a></li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+
 </html>
