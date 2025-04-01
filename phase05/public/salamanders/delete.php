@@ -4,11 +4,12 @@ if(!isset($_GET['id'])) {
     redirect_to(url_for('salamanders/index.php'));
   }
   $id = $_GET['id'];
-  
-  $salamander = find_salamander_by_id($id);
-  
+    
   if(is_post_request()) {
-  
+    delete_salamander($id);
+    redirect_to(url_for('salamanders/index.php'));
+  } else {
+    $salamander = find_salamander_by_id($id);
   }
   
   $pageTitle = 'Delete Salamander'; ?>
@@ -22,4 +23,4 @@ if(!isset($_GET['id'])) {
           <input type="submit" name="commit" value="Delete Salamander" />
       </form>
 
-<?php include(SHARED_PATH . '/salamander-footer.php'); ?>
+<? include(SHARED_PATH . '/salamander-footer.php'); ?>

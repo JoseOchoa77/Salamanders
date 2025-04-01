@@ -1,5 +1,5 @@
 <?php
-
+include_once("initialize.php");
 // Create the find_all_salamanders() function
 // This function should return an associative array of salamanders
 // Remember that $db needs to be global in scope
@@ -18,7 +18,9 @@ function find_all_salamanders_by_id($id) {
     $sql .= "WHERE id='" . $id . "'";
     $result = mysqli_query($db, $sql);
     confirm_result_set($result);
-    return $result;
+    $salamander = mysqli_fetch_assoc($result);
+    mysqli_free_result($result);
+    return $salamander;
 }
 
 function insert_salamander($salamander) {
