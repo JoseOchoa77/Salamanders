@@ -1,33 +1,20 @@
-<!-- require initialize.php -->
-<?php 
-    session_start();
+<?php require_once('../../private/initialize.php'); 
 
-    require_once('../../private/initialize.php');
+$salamanders = [
+  ['id' => '1',  'salamanderName' => 'Red-Legged Salamander'],
+  ['id' => '2',  'salamanderName' => 'Pigeon Mountain Salamander'],
+  ['id' => '3',  'salamanderName' => 'ZigZag Salamander'],
+  ['id' => '4',  'salamanderName' => 'Slimy Salamander'],
+];
 
-    $salamanders = [1 => "Red-Legged Salamander", 2 => "Pigeon Mountain Salamander", 3 => "ZigZag Salamander", 4 =>"Slimy Salamander"];
+$page_title = 'Salamanders'; 
+include(SHARED_PATH . '/salamander-header.php'); 
 
-    $_SESSION['salamanders'] = $salamanders;
 ?>
 
-<!-- 
-  Write a salamanders array with the following
-id=1, salamanderName = Red-Legged Salamander
-id=2, salamanderName = Pigeon Mountain Salamander
-id=3', salamanderName = ZigZag Salamander
-id=4,  salamanderName= Slimy Salamander 
--->
+<h1>Salamanders Main Page</h1>
 
-
-
-<!-- Add the pageTitle for salamanders
-Include a shared path to the salamander header -->
-<?php require_once('../../private/shared/salamander-header.php'); ?>
-
-<html>
-
-<h1>Salamanders</h1>
-
-  <a href="#">Create Salamander</a>
+  <a href="<?= url_for('salamanders/new.php'); ?>">Create a Salamander</a>
 
 <table>
   <tr>
@@ -38,21 +25,15 @@ Include a shared path to the salamander header -->
     <th>&nbsp;</th>
   </tr>
 
-      <?php foreach($salamanders as $id => $salamander) { ?>
+      <?php foreach($salamanders as $salamander) { ?>
         <tr>
-          <!-- <td>Display the salamander id</td> -->
-           <td><?php print("".$id."");?></td>
-    	    <!-- <td>Display the salamander name</td> -->
-             <td><?php print("".$salamander.""); ?></td>
-          <!-- Use url_for with show.php AND h(u) with the salamander['id'] -->
-          <td><a href="show.php?id=<?php print("".$id."")?>">View</a></td>
-          <td><a href="#">Edit</a></td>
-          <td><a href="#">Delete</a></td>
+          <td><?= h($salamander['id']); ?></td>
+    	    <td><?= h($salamander['salamanderName']); ?></td>
+          <td><a href="<?= url_for('salamanders/show.php?id=' . h(u($salamander['id']))); ?>">View</a></td>
+          <td><a href="<?= url_for('salamanders/edit.php?id=' . h(u($salamander['id']))); ?>">Edit</a></td>
+          <td><a href="">Delete</a></td>
     	  </tr>
       <?php } ?>
   	</table>
-      </html>
 
-<?php ?>
- <!--  add the shared path to the salamander footer  -->
- <?php require_once('../../private/shared/salamander-footer.php'); ?>
+<?php include(SHARED_PATH . '/salamander-footer.php'); ?>

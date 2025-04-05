@@ -1,58 +1,51 @@
-<!-- require initialize.php -->
-<?php 
-    session_start();
+<?php
 
-    require_once('../../private/initialize.php');
+require_once('../../private/initialize.php');
+// Use the fina_all_salamanders() function to get an associative array
 
-    $salamanders = [1 => "Red-Legged Salamander", 2 => "Pigeon Mountain Salamander", 3 => "ZigZag Salamander", 4 =>"Slimy Salamander"];
+$page_title = 'Salamanders';
+include(SHARED_PATH . '/salamander-header.php');
 
-    $_SESSION['salamanders'] = $salamanders;
+$sql = "SELECT * FROM salamander ";
+$sql .= "ORDER BY id ASC";
+$salamander_set = find_all_salamanders();
+
 ?>
-
-<!-- 
-  Write a salamanders array with the following
-id=1, salamanderName = Red-Legged Salamander
-id=2, salamanderName = Pigeon Mountain Salamander
-id=3', salamanderName = ZigZag Salamander
-id=4,  salamanderName= Slimy Salamander 
--->
-
-
-
-<!-- Add the pageTitle for salamanders
-Include a shared path to the salamander header -->
-<?php require_once('../../private/shared/salamander-header.php'); ?>
-
-<html>
-
 <h1>Salamanders</h1>
 
-  <a href="#">Create Salamander</a>
+<a href="<?= url_for('salamanders/create.php'); ?>">Create Salamander</a>
 
-<table>
+<!-- Use CSS to style the table -->
+<table border="1">
   <tr>
     <th>ID</th>
     <th>Name</th>
+    <th>Habitat</th>
+    <th>Desc</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
   </tr>
 
-      <?php foreach($salamanders as $id => $salamander) { ?>
-        <tr>
-          <!-- <td>Display the salamander id</td> -->
-           <td><?php print("".$id."");?></td>
-    	    <!-- <td>Display the salamander name</td> -->
-             <td><?php print("".$salamander.""); ?></td>
-          <!-- Use url_for with show.php AND h(u) with the salamander['id'] -->
-          <td><a href="show.php?id=<?php print("".$id."")?>">View</a></td>
-          <td><a href="#">Edit</a></td>
-          <td><a href="#">Delete</a></td>
-    	  </tr>
-      <?php } ?>
-  	</table>
-      </html>
+  <?php
+     while($salamander = mysqli_fetch_assoc($salamander_set)) { ?>
+    <tr>
+      <td><?= h($salamander['id']); ?></td>
+        <td><?= h($salamander['name']); ?></td>
+        <td><?= h($salamander['habitat']);?></td>
+        <td><?= h($salamander['description']);?></td>
+      <td><a href="<?= url_for('salamanders/show.php?id=' . h(u($salamander['id']))); ?>">View</a></td>
+      <td><a href="<?= url_for('salamanders/edit.php?id=' . h(u($salamander['id']))); ?>">Edit</a></td>
+      <td><a href="<?= url_for('salamanders/delete.php?id=' . h(u($salamander['id']))); ?>">Delete</a></td>
+      </tr>
+  <?php } ?> 
+  </table>
 
-<?php ?>
- <!--  add the shared path to the salamander footer  -->
- <?php require_once('../../private/shared/salamander-footer.php'); ?>
+  <?php 
+  mysqli_free_result($salamander_set);
+  ?>
+
+
+  Thanks to <a href="https://herpsofnc.org">Ampibians and Reptiles of North Carolina</a>
+
+  <?php include(SHARED_PATH . '/salamander-footer.php'); ?>
