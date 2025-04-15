@@ -1,4 +1,7 @@
 <?php
+    require_once __DIR__ . '/../vendor/autoload.php';
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+    $dotenv->load();
 header("Cache-Control: no-cache");
   // Assign file paths to PHP constants
   // __FILE__ returns the current path to this file
