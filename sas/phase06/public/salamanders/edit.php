@@ -24,6 +24,13 @@ if(is_post_request()){
     $salamander = find_salamander_by_id($id);
    }
 
+   if (!$salamander) {
+    echo "<p>Salamander not found.</p>";
+    echo "<p><a href='" . url_for('/salamanders/index.php') . "'>&laquo; Back to Salamander List</a></p>";
+    include(SHARED_PATH . '/salamander-footer.php');
+    exit();
+}
+
 include(SHARED_PATH . '/salamander-header.php');
 echo "<h1>Stub for Edit Salamander</h1>";
 

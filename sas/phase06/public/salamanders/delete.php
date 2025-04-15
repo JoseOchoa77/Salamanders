@@ -1,4 +1,5 @@
 <?php require_once('../../private/initialize.php'); 
+
 if(!isset($_GET['id'])) {
     redirect_to(url_for('salamanders/index.php'));
   }
@@ -11,6 +12,14 @@ if(!isset($_GET['id'])) {
     delete_salamander($id);
     redirect_to(url_for('salamanders/index.php'));
   }
+
+  if (!$salamander) {
+    echo "<p>Salamander not found.</p>";
+    echo "<p><a href='" . url_for('/salamanders/index.php') . "'>&laquo; Back to Salamander List</a></p>";
+    include(SHARED_PATH . '/salamander-footer.php');
+    exit();
+}
+
   include(SHARED_PATH . '/salamander-header.php');
   
   $pageTitle = 'Delete Salamander'; ?>

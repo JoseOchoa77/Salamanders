@@ -1,10 +1,4 @@
-phase03/private/db_credentials.php
 phase04/private/db_credentials.php
 phase05/private/db_credentials.php
-../Salamanders/phase05/private/db_credentials.php
-<<<<<<< HEAD
-*.log
+phase06/private/db_credentials.php
 
-=======
-.DS_Store
->>>>>>> d2f100a6e59a2c33adcdabe26a9945a4f852693a

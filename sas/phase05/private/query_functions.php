@@ -13,7 +13,7 @@ function find_all_salamanders() {
 function find_salamander_by_id($id) {
     global $db;
     $sql = "SELECT * FROM salamander ";
-    $sql .="WHERE id=$id";
+    $sql .="WHERE id=".db_escape ($db, $id)."";
     // echo $sql; exit();
     $result = mysqli_query($db, $sql);
     confirm_result_set($result);
@@ -25,7 +25,7 @@ function find_salamander_by_id($id) {
 function find_all_salamanders_by_id($id) {
     global $db;
     $sql = "SELECT * FROM salamander ";
-    $sql .= "WHERE id='" . $id . "'";
+    $sql .= "WHERE id='" . db_escape($db, $id) . "'";
     $result = mysqli_query($db, $sql);
     confirm_result_set($result);
     $salamander = mysqli_fetch_assoc($result);

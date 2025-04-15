@@ -1,8 +1,14 @@
 <?php require_once('../../private/initialize.php');
 
 $id = $_GET['id'] ?? '1'; // PHP > 7.0
-$salamander = find_all_salamanders_by_id($id);
+$salamander = find_salamander_by_id($id);
 
+if (!$salamander) {
+    echo "<p>Salamander not found.</p>";
+    echo "<p><a href='" . url_for('/salamanders/index.php') . "'>&laquo; Back to Salamander List</a></p>";
+    include(SHARED_PATH . '/salamander-footer.php');
+    exit();
+}
 
 
 
