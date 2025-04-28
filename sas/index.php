@@ -16,6 +16,7 @@
             <li><a href="phase03">Phase03</li>
             <li><a href="phase04">Phase04</li>
             <li><a href="phase05">Phase05</li>
+            <li><a href="phase05">Phase06</li>
         </ul>
     </body>
 

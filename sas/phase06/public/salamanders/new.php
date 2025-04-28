@@ -6,8 +6,11 @@ if(is_post_request()) {
     $salamander['description'] = $_POST['description'];
 
     $result = insert_salamander($salamander);
-    if($result === true){
+    if ($result === true) {
         $newID = mysqli_insert_id($db);
+        if (!$newID) {
+            die("Error: Unable to retrieve the new ID.");
+        }
         redirect_to(url_for('salamanders/show.php?id=' . $newID));
     }
     else {

@@ -1,8 +1,8 @@
 <?php
-    require_once __DIR__ . '/../vendor/autoload.php';
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
-    $dotenv->load();
 header("Cache-Control: no-cache");
+require_once __DIR__ . '/../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
   // Assign file paths to PHP constants
   // __FILE__ returns the current path to this file
   // dirname() returns the path to the parent directory
@@ -26,6 +26,6 @@ header("Cache-Control: no-cache");
   require_once('database.php');
   require_once('query_functions.php');
   require_once("shared/validation_functions.php");
-
+    $errors = [];
   $db = db_connect();
-  $errors = [];
+  
