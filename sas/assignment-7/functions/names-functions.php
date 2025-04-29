@@ -46,4 +46,5 @@ function get_valid_names($fullNames, $lastNames, $firstNames) {
             $validFullNames[$i] = $validLastNames[$i] . ", " . $validFirstNames[$i];
         }
     }
+    return($validFullNames);
 }
